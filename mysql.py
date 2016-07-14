@@ -12,4 +12,5 @@ def open_connection(req, resp, resource, params):
     db = pymysql.connect(host=HOST,user=USER,passwd=PASSWORD,db="world")
 
 def close_connection(req, resp, resource):
-    db.close()
+    if db:
+        db.close()
