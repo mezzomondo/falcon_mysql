@@ -9,7 +9,7 @@ Install prerequisites, namely the framework (falcon), pymysql, gunicorn, nose fo
 $ pip install -r requirements.txt
 ```
 
-Restore a copy of the database, I'm using the popular world database available [here](http://dev.mysql.com/doc/index-other.html). Maybe your credential will differ...
+Restore a copy of the database, I'm using the popular world database available [here](http://dev.mysql.com/doc/index-other.html). Maybe your credentials will differ...
 
 ```
 $ mysql < world.sql
