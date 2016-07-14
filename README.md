@@ -16,3 +16,25 @@ $ mysql < world.sql
 ```
 
 Edit credentials in mysql.py
+
+## Running
+
+In one terminal launch:
+
+```
+$ gunicorn app
+```
+
+If everything fires up without problems you can open another terminal and launch:
+
+```
+$ http 127.0.0.1:8000/things
+```
+
+## Test
+
+Included is a small example of a test suite in falcon, to run it just do:
+
+```
+$ nosetests -v test_things.py
+```
